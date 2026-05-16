@@ -3,35 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Estilo.css">
-    <title>Convertor de moedas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="css/Estilo.css">
 </head>
-<body> 
-    <!--INCIO 11/05/26-->
-    <h1>Convertor de moedas</h1>
-    
-    <!-- Formulário para entrada de dados -->
-    <form action="" method="">
-        <label for="amount">Valor:</label>
-        <input type="number" id="amount" name="amount" step="0.01" required><br><br>
 
-        <label for="MoedaOrigem">De:</label>
-        <select id="MoedaOrigem" name="MoedaOrigem">
-            <option value="USD">Dólar Americano (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">Libra Esterlina (GBP)</option>            
-        </select><br><br>
+<body>
+<main>
+    <button id="themeToggle">Dark Mode</button>
+    <div class="card">
 
-        <label for="MoedaDestino">Para:</label>
-        <select id="MoedaDestino" name="MoedaDestino">
-            <option value="USD">Dólar Americano (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">Libra Esterlina (GBP)</option>            
-        </select><br><br>
+        <h1>Conversor de Moedas</h1>
 
-        <button type="button" onclick="converterMoeda">Converter</button>
-    </form>
+        <input
+        type="number"
+        id="valor"
+        placeholder="Digite o valor">
 
-    <script:src="converter.js"></script>
+        <div class="moedas">
+
+            <div class="campo">
+
+                <label>De</label>
+
+                <select id="de">
+                    <option value="BRL">🇧🇷 BRL</option>
+                    <option value="USD">🇺🇸 USD</option>
+                    <option value="EUR">🇪🇺 EUR</option>
+                    <option value="GBP">🇬🇧 GBP</option>
+                </select>
+
+            </div>
+
+            <button id="trocar">
+                ⇄
+            </button>
+
+            <div class="campo">
+
+                <label>Para</label>
+
+                <select id="para">
+                    <option value="USD">🇺🇸 USD</option>
+                    <option value="BRL">🇧🇷 BRL</option>
+                    <option value="EUR">🇪🇺 EUR</option>
+                    <option value="GBP">🇬🇧 GBP</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <button id="converterBtn">
+            Converter
+        </button>
+
+        <div id="resultado">
+                <!-- O resultado da conversão será exibido aqui -->            
+        </div>        
+    </div>
+</main>
+    <script src="js/script.js"></script>
+
+    <footer>
+
+    <div class="footer-content">
+
+        <h3>Sobre o Projeto</h3>
+
+            <p>
+            Conversor de moedas desenvolvido como projeto pessoal,
+            utilizando integração com API em tempo real para atualização
+            automática das cotações internacionais</p>
+            <p>ferramentas utilizadas: HTML, CSS, JavaScript, API de conversão de moedas, GitHub para controle de versão e hospedagem do código</p>
+            <p>Desenvolvido por Gabriel Menezes Sousa <img src="img/bandeiradobrasil-2-cke.webp" alt="Brasil"></p>
+            <br> <br>
+            API: <a href="" target="_blank">Frankfurter API</a>
+       
+
+        <a
+        href=""
+        target="_blank"
+        class="github-btn">
+
+        <i class="devicon-github-original"></i>
+
+        Meu GitHub
+
+        </a>
+
+    </div>
+
+</footer>
 </body>
 </html>
