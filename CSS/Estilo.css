@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #001d5f, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: white;
+    width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+input{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+input:focus{
+    border-color: #3b82f6;
+}
+
+.moedas{
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.campo{
+    flex: 1;
+}
+
+label{
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #374151;
+
+    font-weight: bold;
+}
+
+select{
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    border: 2px solid #e5e7eb;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    background: white;
+}
+
+#trocar{
+    width: 55px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#trocar:hover{
+    background: #dbeafe;
+    transform: scale(1.05);
+}
+
+#converterBtn{
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#converterBtn:hover{
+    background: #1d4ed8;
+}
+
+#resultado{
+    margin-top: 25px;
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #111827;
+}
+
+/*dark mode*/
+#themeToggle{
+    position: absolute;
+
+    top: 25px;
+    right: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.2s;
+}
+
+#themeToggle:hover{
+    transform: scale(1.08);
+}
+body.light{
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+}
+
+body.light .card{
+    background: white;
+}
+
+body.light footer .footer-content{
+    background: rgba(255,255,255,0.7);
+
+    color: #111827;
+}
+
+body.light .footer-content p{
+    color: #374151;
+}
+
+/*=============================================*/
+ /**footer**/
+ footer{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.footer-content{
+    width: 420px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: white;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.footer-content h3{
+    margin-bottom: 12px;
+
+    font-size: 22px;
+}
+
+.footer-content p{
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+
+    color: rgba(255,255,255,0.8);
+}
+
+.footer-content a{
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.footer-content a:hover{
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+ /*=============================*/
+.github-btn{
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 14px 22px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.github-btn:hover{
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+.github-btn i{
+    font-size: 22px;
+}
+
+img     
+{
+    max-width: 5%;
+    height: auto;
+}
