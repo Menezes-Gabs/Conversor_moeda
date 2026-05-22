@@ -1,2 +1,0 @@
-# Conversor_moeda
-CONVERSOR DE MOEDAS, TESTE DE API
