@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/28162446/README.md)
 Conversor de Moedas
 
 Um conversor de moedas moderno desenvolvido com HTML, CSS e JavaScript, utilizando integração com API em tempo real para atualização automática das cotações internacionais.
@@ -18,7 +17,6 @@ Interface moderna e responsiva
 Dark Mode / Light Mode
 Troca rápida de moedas
 Validação de valores
-Bandeiras dos países
 Integração com API externa
 Layout estilizado com Glassmorphism
 API Utilizada
